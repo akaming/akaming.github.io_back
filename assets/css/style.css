@@ -1,0 +1,40 @@
+body, button, code, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4,  h5, h6, legend, li, ol, p, pre, table, td, th, ul {margin: 0; padding: 0;}
+a {text-decoration: none;}
+img {vertical-align: middle;}
+ol, ul {list-style: none;}
+address {font-style: normal;}
+hr {display: none;}
+body, html {margin: 0; padding: 0; font-family: 'Helvetica', 'Arial', sans-serif; color: #303030; box-sizing: border-box;}
+
+
+.contents-wrap {min-height:100%; margin: 0 auto;}
+.centered_content {height:100%; width:980px; margin: 0 auto;}
+
+.portfolio-header {height:146px; background:#dcdcdc; box-shadow:0 3px 5px rgba(0, 0, 0, 0.2);}
+.portfolio-header .header-group {display:table; position:relative;}
+.portfolio-header .header-group .title {display:table-cell; width:309px; vertical-align: middle;}
+.portfolio-header .header-group .title h1 {font-size: 32px;}
+.portfolio-header .header-group .title p {padding-top:15px; font-size: 16px;}
+.portfolio-header .header-group nav {position:absolute; right:0; top: 90px; margin-right:-20px;}
+.portfolio-header .header-group nav li {display: inline-block; padding:0 10px; line-height: 32px;}
+.portfolio-header .header-group nav li a {padding: 0 10px; color:#303030; font-size:16px;}
+.portfolio-header .header-group nav li a:hover {color:#fff; transition:0.4s ease 0s;}
+
+.contents-1 .contents-group {display:table; height:726px;}
+.contents-1 .contents-group .contents-box {display:table-cell; position:relative; vertical-align: middle;}
+.contents-1 .contents-group .contents-box .info {display:inline-block; position:absolute; top:170px; padding-left: 83px;}
+.contents-1 .contents-group .contents-box .info dt {font-size:22px; color:#E33F0E; padding-bottom:23px;}
+.contents-1 .contents-group .contents-box .info dt::after {content:""; display: block; margin-top:5px; width:30px; height:2px; background:#E33F0E;}
+.contents-1 .contents-group .contents-box .info dl {padding-top:50px;}
+
+.portfolio-footer {bottom:0; height:77px; width:100%; background:#dcdcdc;}
+.portfolio-footer .footer-group {display:table;}
+.portfolio-footer .footer-group p {display:inline-block; line-height:77px; font-size:13px;}
+.portfolio-footer .footer-group ul {display:table-cell; text-align:right;}
+.portfolio-footer .footer-group ul li {display: inline-block;}
+.portfolio-footer .footer-group ul li:last-child {margin-right:-10px;}
+.portfolio-footer .footer-group ul li a {display: block; margin-right:10px;}
+
+
+
+
