@@ -1,5 +1,6 @@
 //지도표시
-(function(){
+document.addEventListener("DOMContentLoaded", function(event) {
+    // - Code to execute when all DOM content is loaded.
     function initialize() {
         var myLatlng = new google.maps.LatLng(37.544287, 126.871966); // y, x좌표값
         var mapOptions = {
@@ -25,8 +26,9 @@
             infowindow.open(map, marker);
         });
     }
+
     initialize();
-})();
+});
 
 
 
