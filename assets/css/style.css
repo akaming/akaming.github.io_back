@@ -12,7 +12,7 @@ body, html {margin: 0; padding: 0; font-family: 'Helvetica', 'Arial', sans-serif
 .portfolio-header nav li {display: inline-block; padding:0 10px;}
 .portfolio-header nav li a {display:block; width:95px; color:#fff;}
 
-.contents-home {position:relative; padding-top:64px; height:100%; background:url(../images/test.jpg) no-repeat; background-attachment:fixed; color:#fff;}
+.contents-home {position:relative; padding-top:64px; height:100%; background:url(../images/test.jpg) no-repeat; background-attachment:fixed; background-size: cover; color:#fff;}
 .contents-home .container {position:absolute; left:50%; padding-top:50px; transform: translateX(-50%); text-align:center;}
 .contents-home .container h2 {padding-top:10px; font-size: 50px;}
 .contents-home .container p {font-size:30px;}
@@ -46,7 +46,7 @@ body, html {margin: 0; padding: 0; font-family: 'Helvetica', 'Arial', sans-serif
 .contents-about .container dt {float:left; width:80px; text-align:left; font-weight:600;}
 .contents-about .container dd {float:right; width:194px; text-align: left;}
 
-.contents-background {height:520px; background:url(../images/test.jpg) no-repeat; background-attachment:fixed;}
+.contents-background {height:520px; background:url(../images/test.jpg) no-repeat; background-attachment:fixed; background-size: cover;}
 
 .contents-contact {position:relative; height:871px; background-color:antiquewhite; text-align:center;}
 .contents-contact .container {position:absolute; top:0; right:0; bottom:0; left:0; width:661px; height:502px; margin:auto; background:#fff;}
