@@ -27,7 +27,7 @@ body, html {margin: 0; padding: 0; font-family:'NanumGothic','serif', sans-serif
     
 .contents-skill {position:relative; height:650px; background-color:#ef7b7b; text-align:center;}
 .contents-skill .container {padding-top:130px; width:1280px; margin:0 auto;}
-.contents-skill .container h2 {font-size: 45px; color:#fff;}
+.contents-skill .container h2 {font-size: 45px; color:#fff; text-shadow:1px 1px 1px rgba(0,0,0,0.3);}
 .contents-skill .container h2::after {display:block; content:""; position:relative; left:50%;  transform:translateX(-50%); width:36px; height:3px; margin-top:10px; background-color:#fff;}
 .contents-skill .skill-list {padding-top:60px; color:#fff;}
 .contents-skill .skill-list strong {display:block; padding-top:20px; padding-bottom:15px; font-size:25px;}
@@ -37,7 +37,7 @@ body, html {margin: 0; padding: 0; font-family:'NanumGothic','serif', sans-serif
 
 .contents-project {position:relative; height:982px; background-color:#fcf3ca; text-align:center;}
 .contents-project .container {padding-top:130px; width:1280px; margin:0 auto;}
-.contents-project .container h2 {font-size: 45px; color:#fff;}
+.contents-project .container h2 {font-size: 45px; color:#fff; text-shadow:1px 1px 1px rgba(0,0,0,0.3);}
 .contents-project .container h2::after {display:block; content:""; position:relative; left:50%;  transform:translateX(-50%); width:36px; height:3px; margin-top:10px; background-color:#fff;}
 .contents-project .project-list {padding-top:60px;}
 .contents-project .project-list li{float:left;}
@@ -50,7 +50,7 @@ body, html {margin: 0; padding: 0; font-family:'NanumGothic','serif', sans-serif
 
 .contents-about {position:relative; height:673px; background-color:#c4eada; text-align:center;}
 .contents-about .container {position:absolute; top:0; right:0; bottom:0; left:0; width:661px; height:447px; margin:auto; background:#fff;}
-.contents-about .container h2 {padding-top:72px; font-size: 45px;}
+.contents-about .container h2 {padding-top:72px; font-size: 45px; text-shadow:1px 1px 1px rgba(0,0,0,0.3);}
 .contents-about .container h2::after {display:block; content:""; position:relative; left:50%;  transform:translateX(-50%); width:36px; height:3px; margin-top:10px; background-color:#000;}
 .contents-about .container dl {width:345px; height:290px; padding-top:20px; margin:0 auto; line-height:2.5;}
 .contents-about .container dt {float:left; width:80px; text-align:left; font-weight:600;}
@@ -61,7 +61,7 @@ body, html {margin: 0; padding: 0; font-family:'NanumGothic','serif', sans-serif
 
 .contents-contact {position:relative; height:871px; background-color:#ef7b7b; text-align:center;}
 .contents-contact .container {position:absolute; top:0; right:0; bottom:0; left:0; width:661px; height:502px; margin:auto; background:#fff;}
-.contents-contact .container h2 {padding:63px 0 34px 0; font-size: 45px;}
+.contents-contact .container h2 {padding:63px 0 34px 0; font-size: 45px; text-shadow:1px 1px 1px rgba(0,0,0,0.3);}
 .contents-contact .container h2::after {display:block; content:""; position:relative; left:50%;  transform:translateX(-50%); width:36px; height:3px; margin-top:10px; background-color:#000;}
 .contents-contact .container dl {float:left; margin-left:70px; text-align:left; line-height:1.5;}
 .contents-contact .container dt {font-weight:600;}
