@@ -9,14 +9,14 @@ body, html {margin: 0; padding: 0; font-family:'NanumGothic','serif', sans-serif
 
 .sr-only {font-size:0;}
 .contents-wrap {position:absolute; width:100%; min-width:1240px; max-height: 1920px; height:100%; margin:0 auto;}
-.portfolio-header {position:fixed; width: 100%; height:64px; background-color:#0d1f41; z-index:1;}
+.portfolio-header {position:fixed; width: 100%; height:64px; background-color:#2a4880; z-index:1;}
 .portfolio-header nav {width:1280px; margin:0 auto; text-align:center; line-height: 64px}
 .portfolio-header nav li {display: inline-block; padding:0 35px;}
 .portfolio-header nav li a {display:block; position:relative; color:#fff;}
 .portfolio-header nav li a::before {content:""; position:absolute; width:100%; height:2px; bottom:15px; left:0; background-color:#fff; visibility:hidden; transform:scaleX(0); transition:all 0.3s ease-in-out 0s;}
 .portfolio-header nav li a:hover::before {visibility:visible; transform:scaleX(1);}
 
-.contents-home {position:relative; padding-top:64px; height:100%; background:url(../images/contents-home.jpg) no-repeat; background-position:center; background-size:auto; color:#fff;}
+.contents-home {position:relative; margin-top:64px; height:100%; background:url(../images/contents-home.jpg) no-repeat; background-position:center; background-size:auto; color:#fff;}
 .contents-home .container {position:absolute; left:50%; padding-top:50px; transform: translateX(-50%); text-align:center;}
 .contents-home .container h2 {padding-top:10px; font-size: 50px;}
 .contents-home .container p {font-size:30px;}
@@ -68,7 +68,7 @@ body, html {margin: 0; padding: 0; font-family:'NanumGothic','serif', sans-serif
 .contents-contact .container dd {padding-bottom:20px;}
 .contents-contact .container .map{float:right; width:240px; height:275px; margin-right:70px;}
 
-.portfolio-footer {display:table; height:162px; width:100%; background-color:#0d1f41; color:#fff; text-align:center;}
+.portfolio-footer {display:table; height:162px; width:100%; background-color:#2a4880; color:#fff; text-align:center;}
 .portfolio-footer .footer-group {display: table-cell; vertical-align: middle;}
 .portfolio-footer ul {margin-bottom:20px;}
 .portfolio-footer li {display: inline-block; padding:0 5px;}
