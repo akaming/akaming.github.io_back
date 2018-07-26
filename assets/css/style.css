@@ -18,7 +18,7 @@ body, html {margin: 0; padding: 0; font-family:'NanumGothic','serif', sans-serif
 
 .contents-home {position:relative; margin-top:64px; height:100%; background:url(../images/contents-home.jpg) no-repeat; background-position:center; background-size:auto; color:#fff;}
 .contents-home .container {position:absolute; left:50%; padding-top:50px; transform: translateX(-50%); text-align:center;}
-.contents-home .container h2 {padding-top:10px; font-size: 50px;}
+.contents-home .container h2 {padding-top:10px; font-size: 50px; text-shadow:1px 1px 1px rgba(0,0,0,0.3);} 
 .contents-home .container p {font-size:30px;}
 .contents-home  ul {position:absolute; bottom:70px; left:50%; transform: translateX(-50%);}
 .contents-home  li {display:inline-block;}
