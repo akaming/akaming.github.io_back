@@ -34,6 +34,7 @@ body, html {margin: 0; padding: 0; font-family:'NanumGothic','serif', sans-serif
 .contents-skill .skill-list strong {display:block; padding-top:20px; padding-bottom:15px; font-size:25px;}
 .contents-skill .skill-list ul {line-height:1.5;}
 .contents-skill .skill-list .skill-kind {display:inline-block; padding-right:100px; vertical-align:top;}
+.contents-skill .skill-list .skill-kind:nth-child(2) {padding-right:70px;}
 .contents-skill .skill-list .skill-kind:last-child {padding-right:0;}
 
 .contents-project {position:relative; height:982px; background-color:#fcf3ca; text-align:center;}
