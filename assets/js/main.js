@@ -10,6 +10,23 @@
         }
     });
     
+    //popup 
+        var popup = document.getElementById("popup-box");
+        var OpenBtn = document.getElementById("popup-btn");
+        var CloseBtn = document.getElementById("popup-close");
+        
+        OpenBtn.onclick = function() {
+            popup.style.display = "block";
+        }
+    
+        OpenBtn.onclick = function() {
+            popup.style.display = "block";
+        }
+        CloseBtn.onclick = function() {
+            popup.style.display = "none";
+        }
+    
+
     //지도표시
     function initMap() {
         var uluru = {lat: 37.544023, lng: 126.872009};
