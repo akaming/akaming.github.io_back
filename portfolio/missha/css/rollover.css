@@ -1,0 +1,26 @@
+@charset "utf-8";
+body, ul{
+	margin:0;
+	padding:0;
+}
+nav{
+	background:#222222 url(bg.png) repeat-x 0 100%;
+	padding:40px 0 0 42px;
+	border-bottom:8px solid #91b280;
+}
+.menu{
+	height:38px;
+}
+.menu li{
+	list-style-type:none;
+	float:left;
+	padding:0 0 0 8px;
+}
+.menu li a{
+	float:left;
+}
+.menu li a img{
+	width:161px;
+	height:38px;
+	border:none;
+}
