@@ -1,0 +1,549 @@
+@charset "utf-8";
+@import
+ url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
+@import
+url(https://fonts.googleapis.com/css?family=Kaushan+Script);
+@import 
+url(https://fonts.googleapis.com/css?family=Satisfy);
+/* reset */
+* {margin: 0; padding: 0;}
+ul {list-style: none;}
+hr, .arrow, footer h2, footer ul
+{display: none;}
+hr {display: none;}
+a {color: #202020; text-decoration: none;}
+a:hover, a:focus {color:#f00; text-decoration: underline;}
+.blind{position:absolute; text-indent: -9999%; font-size:0; line-height:0;}
+
+/* base */
+header h1{font-family: 'Kaushan Script', cursive;}
+body{background:url(../img/visual_back.png)no-repeat
+top center; background-size:auto 364px; font:62.5% Arial,"맑은 고딕",sans-serif;background-position: center 50px;
+}
+#introduce .profile ul li:nth-of-type(2){
+    font-family: 'Satisfy', cursive;
+}
+
+/* header */
+header{height: 364px;}
+.navwrap { position: fixed;
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+    z-index: 100;}
+
+.navwrap h1 a { 
+    position: absolute;
+    left: 3.125%;
+    margin: 0;
+    font-size: 1.5em;
+    line-height: 30px;
+    color: #4ee59c;
+}
+
+nav button{ 
+    position: absolute; right: 3.125%; top:13px; 
+    width: 44px; height: 34px; border: 1px solid #ccc; border-radius: 2px; 
+    background: #fff; }
+
+nav span {
+    display: block; 
+    width:20px; height:2px; margin: 4px auto; background:#666;
+}
+
+nav ul {
+    position: relative; top: 48px; 
+    width: 40%; 
+    display: none;
+    float: right;  
+    background: rgba(78,229,156,0.5);
+    
+}
+
+nav li a {
+display: block; 
+height: 40px; padding-left: 5.125%;
+color : #fff;
+border-bottom: 2px solid rgba(120,120,120,0.5);
+font-size: 2em; line-height: 40px; font-weight:bold; text-transform: capitalize; 
+    
+
+}
+
+nav li.last a {
+    color: #96c218;
+}
+
+header .name img  {
+    position: relative;
+    height: 80px; margin-top: 370px; width: 80%; max-width: 281px;
+}
+
+/* main */
+section{
+    padding: 50px 3.125%; border-bottom: 1px 
+        solid #eee; 
+}
+section:after{
+    content:""; display: block; clear: both;
+}
+section h2{
+    margin-bottom: 50px;
+    font-size: 3em; text-align: center;     margin: 150px auto;
+}
+section figure {
+    float: left;
+    margin: 0 0 30px;  width: 50%;
+}
+
+section figure img {
+    width: 100%; max-width:300px; margin-bottom: 20px; 
+}
+
+
+section figure img {
+    width: 100%; max-width:300px; margin-bottom: 20px;
+}
+
+
+section figcaption {
+    padding-right: 0.5em; 
+    color: #494949;
+    font-size: 1.5em;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+
+
+/* #introduce */
+#introduce h2 + div {
+    margin-bottom: 50px; 
+}
+
+#introduce .profile ul li:nth-of-type(1) {
+     margin-bottom: 25px;
+    color: #494949;
+    font-size: 2em;
+    text-align: center;
+    font-weight: bold;
+} 
+
+#introduce .profile ul li:nth-of-type(2){
+    margin-bottom: 25px;
+    color: #494949;
+    font-size: 2em;
+    text-align: center;
+   
+}
+
+#introduce .profile ul li:nth-of-type(3) {
+    font-size: 1.8em;
+    color: #666;
+    margin-bottom: 25px;
+    text-align: center;
+} 
+
+#introduce p img {
+   display: block;
+    margin: auto;
+    margin-bottom:20px ;
+    height: 150px;
+}
+
+
+
+
+#introduce h3 {
+    margin-bottom: 25px;
+    color: #494949;
+    font-size: 2em;
+    text-align: center;
+}
+#introduce li {
+    height: 20px;
+    color: #666; 
+    font-size: 1.5em; text-align: center; 
+}
+
+
+
+#introduce ul {
+    margin-bottom: 25px;
+}
+
+
+
+
+/* website*/
+.slider a{
+    display: block; 
+    height: 200px;
+    background: #eee;
+    }
+.slider div {
+    margin-top: 20px;
+}
+.slider h3{
+    margin-bottom: 10px;
+    color: #494949;
+    font-size: 1.5em; 
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.slider p {
+    font-size: 1.2em; line-height: 1.417;
+}
+
+.slider .page1 { background:url(../img/skinfood.png);
+      background-size: cover;  
+}
+.slider .page2 { background:url(../img/shanel.png);
+      background-size: cover;  
+}
+.slider .page3 { background:url(../img/naturerepublic.png);
+      background-size: cover;  
+}
+
+
+
+/* footer */
+footer {
+    height: 150px; padding-top:10px;
+    background: #2d2d2d;
+}
+footer .footerInner img{
+     height: 40px;   
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+footer p{   
+    font-size: 2em;
+    line-height: 35px;
+    font-weight: bold;
+    color: #787878;
+    position: absolute;
+    white-space: nowrap;
+    text-align: left;
+    left :45px;
+    
+} 
+
+.footerimg{
+        text-align: right;
+    padding: 35px 10px 10px 10px;
+    float: right;  
+    
+}
+
+.footerimg img {
+    position: static;
+     padding-left: 5px;
+    top:65px;
+   width: 20%; max-width: 80px;
+
+
+}
+
+
+
+/* 641 ~ 767 */
+@media screen and (min-width:641px) and (max-width:767px){
+    /* main */
+    section figure{
+        width: 40%;
+    }
+    section figure:nth-of-type(2n){
+        float:right;
+    }
+}
+
+
+/* 780 */
+@media screen and (min-width:780px){
+    
+    /* reset */
+    .arrow{
+        display: block;
+        text-align: center;
+    }
+    
+    
+    /* base */
+    body{
+    background-size: auto;
+    }
+    
+    /* header */
+
+    header {height: 728px; }
+    .navwrap h1 a{
+        font-size: 1.6em;
+    }
+    nav button { display: none;}
+    nav ul{
+        display:block; position: static; float:right; width: auto; margin-right: 7.125%; background: #494949;
+       
+    }
+    nav li{
+        float:left; 
+    }
+    nav li a{
+        padding-left: 40px; border-bottom : none; 
+        line-height: 40px; background: #fff; color: #494949;
+}
+    header p{
+        padding-top: 40px;
+        font-size: 2.6em; 
+    }
+    header p.title {
+        padding-top: 210px;
+        font-size : 8em;
+    }
+    header p img {
+    height: 100px;
+    margin-left: 20px;
+    margin-top: 410px;
+        }
+    header .arrow{
+        padding-top: 40px;
+    }
+    
+    header .name img {
+    height: 90px;
+    margin-left: 20px;
+    margin-top: 430px;
+    width: 80%;
+        max-width: 281px;}
+    
+    
+    /* main */
+    section{
+            padding: 0;
+    }
+    section .arrow{
+        clear:both;
+    padding-top: 100px;
+    }
+    #introduce p img{
+     display: block;
+    height: 200px;
+    margin: 0 0 30px 70%;
+        
+    }
+    
+
+    
+    section h2{
+        margin-bottom: 100px;
+        font-size: 6em;
+        }
+    section figure{
+        width: 25%; 
+        margin: 0 0 50px 12.5%
+    }
+    section figure.ml0{
+        margin-left: 0;
+    }
+    section figure img{
+        margin-bottom: 30px;
+    }
+    section figcaption{
+        font-size: 2.4em;
+    }
+    
+    /* #introduce */
+    
+    
+    #introduce  div {
+        position: relative;
+    float : left;
+    margin:80px 0 0 5%;
+    
+    }
+
+    
+    #introduce  h3 {
+        margin-bottom: 30px;
+        font-size: 3em;
+    }
+   
+    .introduce  li a{
+        height: 34px;
+        font-size: 5.4em;
+    }
+   
+    #introduce .profile ul li:nth-of-type(1) {
+     margin-bottom: 25px;
+    color: #494949;
+    font-size: 2.5em;
+    text-align: center;
+    font-weight: bold;
+    float: left;
+} 
+
+#introduce .profile ul li:nth-of-type(2){
+    color: #494949;
+    font-size: 2.5em;
+    text-align: center;
+    float: left;
+    margin: -3px 0 10px 20px;
+   
+}
+
+#introduce .profile ul li:nth-of-type(3) {
+   font-size: 2em;
+    color: #666;
+    margin: 20px 250px 0 0;
+    }
+    
+    #introduce .manual {
+     margin-left: 5%;
+    }
+    
+    
+    /* website */
+    .slider {position: relative;}
+    .slider a {
+        height: 400px;
+    }
+    .slider div{
+        margin: 40px auto;
+    }
+    .slider h3{
+        font-size: 2.4em;
+    }
+    .slider p{
+        font-size: 2em; line-height: 1.7;
+    }
+    
+     /* footer */
+    footer .footerInner img {
+        height: 50px;
+    }
+    .footerInner p {
+    padding-left: 0;
+    float: left;
+    width: 300px;
+    font-size: 3em;
+    line-height: 1;
+    text-align: left;
+    left: 12%;
+    
+}
+    .footerimg{
+        text-align: right;
+    padding: 25px 10px 0 10px;
+    float: right;  
+       
+    
+}
+
+.footerimg img {
+    position: static;
+     padding-left: 5px;
+    top:65px;
+   width: 20%; max-width: 80px;
+ 
+
+
+}
+        /* .bxslider */
+    .bx-wrapper .bx-controls-direction a{
+        width: 80px; height: 80px;}
+    
+    .bx-wrapper .bx-prev{
+       background-size: 50px;
+        left: 50px;
+    }   
+    .bx-wrapper .bx-next{
+         background-size: 50px;
+        right: 50px;
+        
+    }
+    .bx-wrapper .bx-pager {
+        bottom: 20px;
+    }
+    .bx-wrapper .bx-pager{
+        width: 100%;
+        margin: 0 auto;
+
+    }
+   
+    .bx-wrapper .bx-viewport{
+        left: 0; width: 1000px;
+        box-sizing: border-box;
+    }
+}
+
+
+/* 1300 */
+@media screen and (min-width:1300px) {
+    
+    /* reset */
+     footer h2, footer ul {display: block;}
+    
+    /* base */
+    body{font-family:Arial,"Nanum Gothic",sans-serif;}
+    
+    /* header */
+    .navwrap{
+    width: 100%;
+    border: 1px solid #ccc; 
+    }
+   
+    
+    /* main */
+    section{
+        width: 1300px; margin: 0 auto;
+    }
+    
+    /*introduce */
+    #introduce .manual {
+     margin-left: 13.5%;
+    }
+
+    /* footer */
+    footer .footerInner img {
+        height: 60px;
+    }
+    footer {
+        height: 150px; padding-top: 10px;
+    }
+    .footerInner p {
+        padding-left: 0px;
+    float: left;
+    width: 300px;
+    font-size: 3em;
+    line-height: 1;
+    text-align: left;
+    left: 13%;
+    }
+    footer a {
+        color: #fff; 
+    }
+    .footerInner {
+        width: 1200px; margin: 0 auto; 
+    }
+  
+   .footerimg{
+        text-align: right;
+    padding: 10px 100px 0 10px;
+    float: right;  
+       
+    
+}
+
+.footerimg img {
+    position: static;
+     padding-left: 5px;
+  
+   width: 20%; max-width: 80px;
+    }
+    }
+    
+
+
+
+
+
