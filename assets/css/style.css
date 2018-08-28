@@ -1,4 +1,8 @@
-@font-face {font-family: 'NanumGothic'; src: url('../fonts/NanumGothic.eot'); src: url('../fonts/NanumGothic.eot') format('embedded-opentype'), url('../fonts/NanumGothic.woff') format('woff');}
+@font-face {
+    font-family: 'NanumGothic'; 
+    src: url('../fonts/NanumGothic.eot');
+    src: url('../fonts/NanumGothic.eot') format('embedded-opentype'), url('../fonts/NanumGothic.woff') format('woff');
+}
 
 body, button, code, dd, dl, dt, fieldset, figure, form, h1, h2, h3, h4,  h5, h6, legend, li, ol, p, pre, table, td, th, ul {margin: 0; padding: 0;}
 a {text-decoration: none;}
