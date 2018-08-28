@@ -355,12 +355,31 @@ body, html {margin: 0; padding: 0; font-family:'NanumGothic','serif', sans-serif
 .contents-contact .popup-btn {
     cursor:pointer;
 }
-
 .contents-contact .popup-box {
     padding: 20px 20px 30px 20px;
-    position:absolute;
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:630px;
+    height:353px;
+    margin:auto;
     border:1px solid #000;
     background-color: #ffdede;
+}
+.contents-contact .popup-box .popup-close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    transition: all 200ms;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+.contents-contact .popup-box .popup-close:hover {
+    color: #ef7b7b;
 }
 
 .contents-contact .popup-box h3 {
