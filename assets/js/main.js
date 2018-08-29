@@ -10,6 +10,16 @@
         }
     });
     
+    //스크롤시 메뉴 색상 변경
+    $(window).on("scroll",function(){
+        if($(window).scrollTop() > 943 ) {
+            $(".portfolio-header").addClass("scroll-changes");
+        }else{
+            $(".portfolio-header").removeClass("scroll-changes");
+        }
+    });
+
+
     //popup 
         var popup = document.getElementById("popup-box");
         var OpenBtn = document.getElementById("popup-btn");
