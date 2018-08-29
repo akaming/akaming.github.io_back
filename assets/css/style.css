@@ -82,6 +82,13 @@ body, html {margin: 0; padding: 0; font-family:'NanumGothic','serif', sans-serif
     background-size:cover; 
     color:#fff;
 }
+.contents-home small {
+    position:absolute;
+    left:10px;
+    top:70px;
+    color:#aaa;
+    font-size:12px;
+}
 .contents-home .container {
     position:absolute; 
     left:50%; 
