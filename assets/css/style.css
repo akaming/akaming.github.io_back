@@ -245,6 +245,22 @@ body, html {margin: 0; padding: 0; font-family:'NanumGothic','serif', sans-serif
     padding-bottom:10px; 
     font-size:20px;
 }
+.contents-project .project-list .project-info {
+    padding-top: 10px;
+}
+.contents-project .project-list .project-info dt {
+    display: inline-block;
+    min-width: 50px;
+    margin-bottom: 5px;
+}
+.contents-project .project-list .project-info dd{
+    display: inline;
+    margin: 0;
+}
+.contents-project .project-list .project-info dd::after {
+    display: block;
+    content: "";
+}
 
 .contents-about {
     position:relative;
