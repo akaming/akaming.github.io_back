@@ -1,0 +1,9 @@
+$font_size: 16px;
+$font_family: NanumGothic;
+$font_color: #333;
+
+@font-face {
+    font-family: 'NanumGothic'; 
+    src: url('../fonts/NanumGothic.eot');
+    src: url('../fonts/NanumGothic.eot') format('embedded-opentype'), url('../fonts/NanumGothic.woff') format('woff');
+}

@@ -9,7 +9,15 @@ a {text-decoration: none;}
 img {vertical-align: middle;}
 ol, ul {list-style: none;}
 address {font-style: normal;}
-body, html {margin: 0; padding: 0; font-family:'NanumGothic','serif', sans-serif; color: #303030; box-sizing: border-box;}
+body {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    /* font: {
+        size: $font_size;
+        family: $font_family;
+    } */
+}
 
 .sr-only {
     font-size:0;
