@@ -81,21 +81,10 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 0);
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/sass/main.scss");
 /******/ })
 /************************************************************************/
 /******/ ({
-
-/***/ "./src/js/main_.js":
-/*!*************************!*\
-  !*** ./src/js/main_.js ***!
-  \*************************/
-/*! no static exports found */
-/***/ (function(module, exports) {
-
-throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index.js):\nError: Cannot find module '@babel/plugin-proposal-class-properties' from 'C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io'\n    at Function.module.exports [as sync] (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\resolve\\lib\\sync.js:69:15)\n    at resolveStandardizedName (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\@babel\\core\\lib\\config\\files\\plugins.js:101:31)\n    at resolvePlugin (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\@babel\\core\\lib\\config\\files\\plugins.js:54:10)\n    at loadPlugin (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\@babel\\core\\lib\\config\\files\\plugins.js:62:20)\n    at createDescriptor (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:154:9)\n    at items.map (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:109:50)\n    at Array.map (<anonymous>)\n    at createDescriptors (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:109:29)\n    at createPluginDescriptors (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:105:10)\n    at alias (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:63:49)\n    at cachedFunction (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\@babel\\core\\lib\\config\\caching.js:33:19)\n    at plugins.plugins (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\@babel\\core\\lib\\config\\config-descriptors.js:28:77)\n    at mergeChainOpts (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\@babel\\core\\lib\\config\\config-chain.js:319:26)\n    at C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\@babel\\core\\lib\\config\\config-chain.js:283:7\n    at buildRootChain (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\@babel\\core\\lib\\config\\config-chain.js:68:29)\n    at loadPrivatePartialConfig (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\@babel\\core\\lib\\config\\partial.js:85:55)\n    at Object.loadPartialConfig (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\@babel\\core\\lib\\config\\partial.js:110:18)\n    at Object.<anonymous> (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\babel-loader\\lib\\index.js:144:26)\n    at Generator.next (<anonymous>)\n    at asyncGeneratorStep (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\babel-loader\\lib\\index.js:3:103)\n    at _next (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\babel-loader\\lib\\index.js:5:194)\n    at C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\babel-loader\\lib\\index.js:5:364\n    at new Promise (<anonymous>)\n    at Object.<anonymous> (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\babel-loader\\lib\\index.js:5:97)\n    at Object._loader (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\babel-loader\\lib\\index.js:224:18)\n    at Object.loader (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\babel-loader\\lib\\index.js:60:18)\n    at Object.<anonymous> (C:\\Users\\이명민\\Desktop\\portfolio\\akaming.github.io\\node_modules\\babel-loader\\lib\\index.js:55:12)");
-
-/***/ }),
 
 /***/ "./src/sass/main.scss":
 /*!****************************!*\
@@ -105,19 +94,6 @@ throw new Error("Module build failed (from ./node_modules/babel-loader/lib/index
 /***/ (function(module, exports, __webpack_require__) {
 
 // extracted by mini-css-extract-plugin
-
-/***/ }),
-
-/***/ 0:
-/*!****************************************************!*\
-  !*** multi ./src/sass/main.scss ./src/js/main_.js ***!
-  \****************************************************/
-/*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
-
-__webpack_require__(/*! ./src/sass/main.scss */"./src/sass/main.scss");
-module.exports = __webpack_require__(/*! ./src/js/main_.js */"./src/js/main_.js");
-
 
 /***/ })
 
