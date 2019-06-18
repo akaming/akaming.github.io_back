@@ -103,6 +103,7 @@ body {
   position: relative;
   padding-top: 64px;
   height: 100%;
+  background: url(./contents.jpg?74fe644f3e96b4754d020b7fea708cec) no-repeat;
   background-position: center;
   background-size: cover;
   color: #fff;

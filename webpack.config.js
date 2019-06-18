@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   // enntry file
-  entry: './src/sass/main.scss',
+  entry: ['./src/sass/main.scss','./src/js/main_.js'],
   // 컴파일 + 번들링된 js 파일이 저장될 경로와 이름 지정
   output: {
     path: path.resolve(__dirname, 'dist/js'),
@@ -40,6 +40,16 @@ module.exports = {
           'sass-loader?outputStyle=expanded'  
         ],
         exclude: /node_modules/
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/,
+        use: {
+          loader: 'file-loader',
+          options: {
+            name: '[name].[ext]?[hash]',
+            publicPath: './'
+          }
+        }
       }
     ]
   },
