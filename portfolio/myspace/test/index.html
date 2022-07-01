@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://static.ybtour.com/js/jquery-pc.min.js"></script>
+    <link href="https://www.ybtour.co.kr/static/css/common.css?20220610" rel="stylesheet">
+	<link href="https://www.ybtour.co.kr/static/css/content.css" rel="stylesheet">
+    <title>노랑풍선 가이드 : 탭 youtube</title>
+</head>
+<body>
+    <div class="promotion_view promotion_container">
+        <style>
+            .promotion_container {overflow: visible; font-size: 0;}
+            .promotion_content {contain: content;}
+            .test_content {height: 4000px; background-color: #faba00;}
+            .test_container .bg{position: relative; left: 50%; min-width: 1200px; width: 2000px; max-width: 2000px; transform: translate(-50%);}
+            .test_footer {height: 100vh; background-color: #555;}
+            /* tab style */
+            .tab_area {height:170px; width: 100%;}
+            .tab_area.fix {position: sticky; top:0; z-index:1;}
+            .tab_wrap {position: relative; width: 100%; padding-top: 21px;  background-color: #6ac3e5;}
+            .tab_wrap ul {display: flex; justify-content: center;}
+            .tab_wrap li:nth-child(1) .tab_item{background-image:url(https://cimgcdn.ybtour.co.kr//promotion/event/2022/0530_ev_hanacard7sale/images/220530_ev_hanacard7sale_tab_01.png);}
+            .tab_wrap li:nth-child(2) .tab_item{background-image:url(https://cimgcdn.ybtour.co.kr//promotion/event/2022/0530_ev_hanacard7sale/images/220530_ev_hanacard7sale_tab_02.png);}
+            .tab_wrap .tab_item {position:relative; display:block; height:149px; width:600px; background-size:100% auto; background-position:50% 100%; font-size:0;}
+            .tab_wrap .tab_item.active {background-position: 50% 0;}
+
+            .event_content {display: none; font-size:12px;}
+            .event_content.active {display: block;}
+        </style>
+        <section class="promotion_content">
+            <div class="test_content"></div>
+            <div class="test_container">
+                <div class="tab_area">
+                    <div class="tab_wrap">
+                        <ul>
+                            <li><a href="#content01" class="tab_item active" data-target="package">패키지여행</a></li>
+                            <li><a href="#content02" class="tab_item" data-target="free">자유여행</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="content01" class="event_content active">
+                    content1
+                    <!-- <iframe id="ytplayer0" class="youtube1" width="560" height="315" src="https://www.youtube.com/embed/_CoMNxngWQY" title="YouTube video player" enablejsapi=1 frameborder="0" allowfullscreen></iframe> -->
+                    <div id="player0"></div>
+                </div>
+                <div id="content02" class="event_content">
+                    content2
+                    <!-- <iframe id="ytplayer1" class="youtube2" width="560" height="315" src="https://www.youtube.com/embed/fIgtoeurYVk" title="YouTube video player" enablejsapi=1 frameborder="0" allowfullscreen></iframe> -->
+                    <div id="player1"></div>
+                </div>
+                <img src="https://cimgcdn.ybtour.co.kr//promotion/event/2022/0530_ev_hanacard7sale/images/220530_ev_hanacard7sale_05.jpg" alt="" class="bg">
+            </div>
+            <div class="test_footer"></div>
+            <!-- 탬플릿 탭 예시 입니다. 실제로는 사용하지 않습니다. -->
+            <div id="template_view">
+                <div class="box_prom_temp">
+                    <ul class="tab_temp_1">
+                        <li class="on"><a href="#list1_temp1">탬플릿 탭 1</a>
+                        <li class=""><a href="#list1_temp2">탬플릿 탭 2</a>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <script>
+            // 2. This code loads the IFrame Player API code asynchronously.
+            var tag = document.createElement('script');
+
+            tag.src = "https://www.youtube.com/iframe_api";
+            var firstScriptTag = document.getElementsByTagName('script')[0];
+            firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+            console.log('tag', tag);
+
+            // 3. This function creates an <iframe> (and YouTube player)
+            //    after the API code downloads.
+            var player0, player1;
+            function onYouTubeIframeAPIReady () {
+                console.log('onYouTubeIframeAPIReady');
+                player0 = new YT.Player('player0', {
+                    videoId: '_CoMNxngWQY',
+                    events: {
+                    'onReady': onPlayerReady,               // 플레이어 로드가 완료되고 API 호출을 받을 준비가 될 때마다 실행
+                    'onStateChange': onPlayerStateChange    // 플레이어의 상태가 변경될 때마다 실행
+                    }
+                });
+                player1 = new YT.Player('player1', {
+                    videoId: 'fIgtoeurYVk',
+                    events: {
+                    'onReady': onPlayerReady,               // 플레이어 로드가 완료되고 API 호출을 받을 준비가 될 때마다 실행
+                    'onStateChange': onPlayerStateChange    // 플레이어의 상태가 변경될 때마다 실행
+                    }
+                });
+            }
+
+
+            function onPlayerReady(event) {
+                console.log('onPlayerReady 실행', event.target);
+
+                // 플레이어 자동실행 (주의: 모바일에서는 자동실행되지 않음)
+                // event.target.playVideo();
+            }
+
+            function onPlayerStateChange(event) {
+                // console.log('onPlayerStateChange', event.target);
+            }
+
+                            
+            function youtubeStop() {
+                // debugger;
+                player0.pauseVideo();
+                player1.pauseVideo();
+                // player1.stopVideo();
+            }
+
+            (function() {
+                window.addEventListener('load', function() {
+                    const querystring = window.location.search
+                    const params = new URLSearchParams(querystring );
+                    const active = params.get('active');
+                    const intro = params.get('intro') || 'package';
+
+                    if (active) {
+                        activeTab(active);
+                    }
+    
+                    if (intro) {
+                        activeTab(intro);
+                    }
+
+                    readyYoutube();
+                });
+
+                // 탭 활성화
+                function activeTab(target) {
+                    const tabs = document.querySelectorAll('.promotion_content .tab_wrap .tab_item');
+    
+                    tabs.forEach( tab => {
+                        const contentId = tab.getAttribute("href");
+
+                        tab.addEventListener("click", function(e) {
+                            e.preventDefault();
+                            const href = e.target.getAttribute("href");
+
+                            tabs.forEach( tab => tab.classList.remove("active"));
+                            this.classList.add("active");
+                            
+                            eventContent(href);
+
+                            youtubeStop();
+                        })
+                         
+                        // 파라미터
+                        if ( target === tab.dataset.target) {
+                            tab.classList.add("active");
+                            eventContent(contentId)
+                        } else {
+                            tab.classList.remove("active")
+                        }
+                    })               
+                }
+
+                // 탭 활성화시 content 실행
+                function eventContent(content) {
+                    const contents = document.querySelectorAll(".promotion_content .event_content");
+                    contents.forEach( c => c.classList.remove("active"));
+                    document.querySelector(content).classList.add("active");
+                }
+            })();
+        </script>
+    </div>
+</body>
+</html>
