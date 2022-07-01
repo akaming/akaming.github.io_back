@@ -43,13 +43,16 @@
                 </div>
                 <div id="content01" class="event_content active">
                     content1
-                    <!-- <iframe id="ytplayer0" class="youtube1" width="560" height="315" src="https://www.youtube.com/embed/_CoMNxngWQY" title="YouTube video player" enablejsapi=1 frameborder="0" allowfullscreen></iframe> -->
-                    <div id="player0"></div>
+                    <!-- <iframe id="player0" width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0?rel=0&enablejsapi=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+                    <!-- <iframe id="player0" width="640" height="360" src="http://www.youtube.com/embed/PToXHDkErGM&origin=http://www.youtube.com/embed/PToXHDkErGM&enablejsapi=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+                    
+                    <iframe id="player0" width="640" height="360" src="https://www.youtube.com/embed/PToXHDkErGM?rel=0&enablejsapi=1&origin=https://akaming.github.io/portfolio/myspace/test/index.html" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
                 </div>
                 <div id="content02" class="event_content">
                     content2
-                    <!-- <iframe id="ytplayer1" class="youtube2" width="560" height="315" src="https://www.youtube.com/embed/fIgtoeurYVk" title="YouTube video player" enablejsapi=1 frameborder="0" allowfullscreen></iframe> -->
-                    <div id="player1"></div>
+                    <!-- <iframe id="player1" width="560" height="315" src="https://www.youtube.com/embed/9bZkp7q19f0?rel=0&enablejsapi=1" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+                    <iframe id="player1" width="640" height="360" src="https://www.youtube.com/embed/PToXHDkErGM?rel=0&enablejsapi=1&origin=https://akaming.github.io/portfolio/myspace/test/index.html" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
                 </div>
                 <img src="https://cimgcdn.ybtour.co.kr//promotion/event/2022/0530_ev_hanacard7sale/images/220530_ev_hanacard7sale_05.jpg" alt="" class="bg">
             </div>
@@ -65,28 +68,21 @@
             </div>
         </section>
         <script>
-            // 2. This code loads the IFrame Player API code asynchronously.
             var tag = document.createElement('script');
-
             tag.src = "https://www.youtube.com/iframe_api";
             var firstScriptTag = document.getElementsByTagName('script')[0];
             firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-            console.log('tag', tag);
-
-            // 3. This function creates an <iframe> (and YouTube player)
-            //    after the API code downloads.
             var player0, player1;
+
             function onYouTubeIframeAPIReady () {
                 console.log('onYouTubeIframeAPIReady');
                 player0 = new YT.Player('player0', {
-                    videoId: '_CoMNxngWQY',
                     events: {
                     'onReady': onPlayerReady,               // 플레이어 로드가 완료되고 API 호출을 받을 준비가 될 때마다 실행
                     'onStateChange': onPlayerStateChange    // 플레이어의 상태가 변경될 때마다 실행
                     }
                 });
                 player1 = new YT.Player('player1', {
-                    videoId: 'fIgtoeurYVk',
                     events: {
                     'onReady': onPlayerReady,               // 플레이어 로드가 완료되고 API 호출을 받을 준비가 될 때마다 실행
                     'onStateChange': onPlayerStateChange    // 플레이어의 상태가 변경될 때마다 실행
@@ -96,22 +92,15 @@
 
 
             function onPlayerReady(event) {
-                console.log('onPlayerReady 실행', event.target);
-
-                // 플레이어 자동실행 (주의: 모바일에서는 자동실행되지 않음)
-                // event.target.playVideo();
             }
 
             function onPlayerStateChange(event) {
-                // console.log('onPlayerStateChange', event.target);
             }
 
                             
             function youtubeStop() {
-                // debugger;
                 player0.pauseVideo();
                 player1.pauseVideo();
-                // player1.stopVideo();
             }
 
             (function() {
